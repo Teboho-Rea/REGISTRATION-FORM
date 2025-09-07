@@ -1,0 +1,153 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8; /* Light gray-blue background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Form container */
+.form-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+/* Heading styling */
+h2 {
+    text-align: center;
+    color: #0056b3; /* Dark blue heading */
+    margin-bottom: 30px;
+}
+
+/* Form group layout */
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Label styling */
+label, legend {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Input, select, textarea styling */
+input:not([type="radio"]):not([type="checkbox"]):not([type="file"]),
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+
+/* Specific input types */
+input[type="range"] {
+    width: calc(100% - 40px); /* Adjust width for output */
+    vertical-align: middle;
+}
+
+input[type="range"] + output {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Radio and checkbox layout */
+.input-inline {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.input-inline input {
+    margin-right: 5px;
+}
+
+/* Fieldset styling for grouping related controls */
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+legend {
+    padding: 0 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #0056b3;
+}
+
+/* Button styling */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+button[type="submit"] {
+    background-color: #007bff; /* Blue for primary action */
+    color: #fff;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.secondary {
+    background-color: #6c757d; /* Gray for secondary action */
+    color: #fff;
+}
+
+.secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Error message styling */
+.error-message {
+    color: #dc3545; /* Red for error messages */
+    font-size: 0.9em;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Validation states */
+input.invalid, textarea.invalid, select.invalid {
+    border-color: #dc3545;
+}

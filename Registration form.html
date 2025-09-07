@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="new.css">
+    <script src="Form.js" defer></script>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Create an Account</h2>
+        <form id="registrationForm" novalidate>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Choose a username" required>
+                <span class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <span class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob">
+                <span class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="tel">Phone Number</label>
+                <input type="tel" id="tel" name="tel" placeholder="123-456-7890">
+                <span class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="website">Website</label>
+                <input type="url" id="website" name="website" placeholder="https://example.com">
+                <span class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="">-- Select a country --</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="AU">Australia</option>
+                </select>
+                <span class="error-message"></span>
+            </div>
+
+            <fieldset class="form-group">
+                <legend>Gender</legend>
+                <div class="input-inline">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                </div>
+                <div class="input-inline">
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+                <div class="input-inline">
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </div>
+                <span class="error-message"></span>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <legend>Interests (check all that apply)</legend>
+                <div class="input-inline">
+                    <input type="checkbox" id="sports" name="interests" value="sports">
+                    <label for="sports">Sports</label>
+                </div>
+                <div class="input-inline">
+                    <input type="checkbox" id="music" name="interests" value="music">
+                    <label for="music">Music</label>
+                </div>
+                <div class="input-inline">
+                    <input type="checkbox" id="reading" name="interests" value="reading">
+                    <label for="reading">Reading</label>
+                </div>
+                <div class="input-inline">
+                    <input type="checkbox" id="travel" name="interests" value="travel">
+                    <label for="travel">Travel</label>
+                </div>
+                <span class="error-message"></span>
+            </fieldset>
+
+            <div class="form-group">
+                <label for="profilePicture">Profile Picture</label>
+                <input type="file" id="profilePicture" name="profilePicture">
+                <span class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age (18-120)</label>
+                <input type="number" id="age" name="age" min="18" max="120">
+                <span class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="satisfaction">Satisfaction Level (1-10)</label>
+                <input type="range" id="satisfaction" name="satisfaction" min="1" max="10">
+                <output for="satisfaction">5</output>
+            </div>
+
+            <div class="form-group button-group">
+                <button type="submit">Register</button>
+                <button type="reset" class="secondary">Clear Form</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
